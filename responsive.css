@@ -1,0 +1,31 @@
+@media (max-width: 576px) {
+    .navBarBody {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    .navlinks {
+        flex-direction: column;
+        gap: 1.2rem;
+        background-color: rgb(212, 235, 177);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        padding: 2rem;
+        width: 300px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
+        display: none;
+    }
+
+    .navlinks.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: 20rem;
+    }
+}
