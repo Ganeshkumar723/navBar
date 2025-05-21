@@ -29,3 +29,42 @@
         margin-left: 20rem;
     }
 }
+
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .navBarBody {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navlinks {
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 500px;
+        padding: 1.5rem;
+        gap: 1.2rem;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+        display: none;
+        z-index: 1000;
+    }
+
+    .navlinks.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 2.5rem;
+        cursor: pointer;
+        margin-left: auto;
+        padding: 1rem;
+    }
+
+    .logoBlock img {
+        width: 120px; /* Optional: make logo smaller in landscape */
+    }
+}
